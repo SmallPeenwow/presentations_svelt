@@ -2,6 +2,7 @@
     import Slide from "./slide.svelte";
     import Code from "./code.svelte";
     import Markdown from "./markdown.svelte";
+    import Notes from "./notes.svelte";
 </script>
 
 <!-- <Slide animate>
@@ -57,11 +58,17 @@
     </div>
 </Slide> -->
 
-<Markdown>
+<!-- <Markdown>
     {`
         ## Markdown
         Hello
     `}
 </Markdown>
 
-<Markdown name="example.md" external />
+<Markdown name="example.md" external /> -->
+
+<Slide>
+    <h1>Slide</h1>
+
+    <Notes>Notes</Notes>
+</Slide>
