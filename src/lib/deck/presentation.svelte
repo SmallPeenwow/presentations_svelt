@@ -1,6 +1,7 @@
 <script lang="ts">
     import Slide from "./slide.svelte";
     import Code from "./code.svelte";
+    import Markdown from "./markdown.svelte";
 </script>
 
 <!-- <Slide animate>
@@ -19,7 +20,7 @@
     <Slide>Vertical slide 1</Slide>
     <Slide>Vertical slide 2</Slide>
 </Slide> -->
-
+<!-- 
 <Slide animate>
     <Code id="code" lines>
         {`
@@ -54,4 +55,13 @@
         <div data-id='box-2' class="w-[200px] h-[200px] bg-green-400"></div>
         <div data-id='box-3' class="w-[200px] h-[200px] bg-blue-400"></div>
     </div>
-</Slide>
+</Slide> -->
+
+<Markdown>
+    {`
+        ## Markdown
+        Hello
+    `}
+</Markdown>
+
+<Markdown name="example.md" external />
