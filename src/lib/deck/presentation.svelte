@@ -1,8 +1,9 @@
 <script lang="ts">
     import Slide from "./slide.svelte";
+    import Code from "./code.svelte";
 </script>
 
-<Slide animate>
+<!-- <Slide animate>
     <div class="text-green-700">Auto-Animate</div>
 </Slide>
 
@@ -17,4 +18,22 @@
 <Slide>
     <Slide>Vertical slide 1</Slide>
     <Slide>Vertical slide 2</Slide>
+</Slide> -->
+
+<Slide animate>
+    <Code id="code" lines>
+        {`
+            function love() {}
+        `}
+    </Code>
+</Slide>
+
+<Slide animate>
+    <Code id="code" lines>
+        {`
+            function love() {
+                console.log('Svelte')
+            }
+        `}
+    </Code>
 </Slide>
